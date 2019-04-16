@@ -1,0 +1,39 @@
+SIOL
+
+*initial set of variables*
+INTO num_1 IS 0
+INTO num_2 IS 10
+INTO num_3 IS 0 *need for prime calculation
+
+BEG prime
+INPUT (prime) : Number is PRIME
+
+BEG not_prime
+INPUT (not_prime) : Number is NOT PRIME
+
+*iteration of start*
+ITERATE num_1 TO num_2
+	LOOP
+	*MODULO operation for determining if PRIME*
+	INTO num_3 IS MOD num_1 2
+	
+		*if modulo is 0, number is not prime*
+		IF num_3 EQUAL 0
+		BEGIN
+		PRINT not_prime
+		END
+		
+		*else number is prime*
+		IF num_3 NOTEQ 0
+		BEGIN
+		PRINT prime
+		END
+	INTO num_1 IS ADD num_1 1	
+	ENDLOOP
+
+(...codes will be interpreted...)
+	
+LOIS
+
+Program terminates. . .
+------------------------------------
