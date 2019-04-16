@@ -6,32 +6,32 @@ As an interactive interpreter, it implements declaration, arithmetic, for loop, 
 
 Below is SIOL Grammar:
 
-<var_name>   -> <letter>{<letter>|<digit>|_}
+<var_name>-> <letter>{<letter>|<digit>|_}
   
-<letter>     -> a|b|c…|z|A|B|C..|Z|
+<letter>-> a|b|c…|z|A|B|C..|Z|
   
-<digit>      -> 0|1|2…|9|
+<digit>-> 0|1|2…|9|
   
-<value>      -> <digit>{<digit>}
+<value>-> <digit>{<digit>}
   
-<expr>       -> <value>|<var_name>
+<expr>-> <value>|<var_name>
   
-<assignment> -> INTO <var_name> IS <expr>
+<assignment>-> INTO <var_name> IS <expr>
   
-<input>      -> BEG <var_name>
+<input>-> BEG <var_name>
   
-<output>     -> PRINT <var_name>
+<output>-> PRINT <var_name>
   
-<addition>   ->INTO <var_name> IS ADD <var_name> <var_name>
+<addition>->INTO <var_name> IS ADD <var_name> <var_name>
   
 <subtraction>->INTO <var_name> IS SUB <var_name> <var_name>
   
 <multiplication>->INTO <var_name> IS MULT <var_name> <var_name>
   
-<division>      ->INTO <var_name> IS DIV <var_name> <var_name>
+<division>->INTO <var_name> IS DIV <var_name> <var_name>
   
-<modulo>        ->INTO <var_name> IS MOD <var_name> <var_name>
-<rel_op>            -> <|>|<=|>=|==|!=
+<modulo>->INTO <var_name> IS MOD <var_name> <var_name>
+<rel_op>-> <|>|<=|>=|==|!=
   
 <if statement>      -> IF <var_name>|<value> <rel_op> <var_name>|<value> THEN
                           BEGIN
